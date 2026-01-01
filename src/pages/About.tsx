@@ -1,12 +1,16 @@
 import Hero from '../components/ui/Hero';
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { MapPin, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function About() {
     return (
         <>
-            <SEO title="About Us - Estimating Florida" description="Welcome to Estimating Florida, a team of professionals who provide construction estimating services in Florida." />
+            <PageSEO
+                slug="about"
+                fallbackTitle="About Us - Estimating Florida"
+                fallbackDescription="Welcome to Estimating Florida, a team of professionals who provide construction estimating services in Florida."
+            />
             <Hero title="About Estimating Florida" subtitle="Your trusted partner for accurate, reliable construction estimating." />
 
             <section className="py-20">

@@ -1,15 +1,16 @@
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { Check, Star, Clock, Calculator, FileText, Building, Phone, Upload, Calendar, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Pricing() {
     return (
         <>
-            <SEO 
-                title="Pricing - Construction Estimating Services" 
-                description="Best Estimates at a Reasonable Budget. Accurate construction estimates at low rates. 20 years of experience with 99% bid-win ratio." 
+            <PageSEO
+                slug="pricing"
+                fallbackTitle="Pricing - Construction Estimating Services"
+                fallbackDescription="Best Estimates at a Reasonable Budget. Accurate construction estimates at low rates. 20 years of experience with 99% bid-win ratio."
             />
-            
+
             {/* Hero Section */}
             <section className="relative py-32 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
@@ -19,9 +20,9 @@ export default function Pricing() {
                             Best Estimates at a Reasonable Budget
                         </h1>
                         <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-                            Are you looking for a platform that provides accurate construction estimates at low rates? 
-                            We have been providing the best construction Estimating Services for 20 years for the best budgets ever possible. 
-                            We have supported thousands of contractors, builders, developers, architects, and homeowners to achieve 
+                            Are you looking for a platform that provides accurate construction estimates at low rates?
+                            We have been providing the best construction Estimating Services for 20 years for the best budgets ever possible.
+                            We have supported thousands of contractors, builders, developers, architects, and homeowners to achieve
                             budget accuracy and bid-win ratio up to 99%.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -45,15 +46,15 @@ export default function Pricing() {
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Construction Estimating Plans</h2>
                         <div className="text-lg text-gray-600 leading-relaxed space-y-4">
                             <p>
-                                Cost is the most important factor in estimation. It should be clear before the project starts. 
-                                Generally, smaller or simpler projects come with a straightforward, fixed fee. For simple projects, 
-                                the estimation fee averages around $200 per project. This option is good for contractors who need 
+                                Cost is the most important factor in estimation. It should be clear before the project starts.
+                                Generally, smaller or simpler projects come with a straightforward, fixed fee. For simple projects,
+                                the estimation fee averages around $200 per project. This option is good for contractors who need
                                 estimates or only handle a few jobs.
                             </p>
                             <p>
-                                If you manage multiple projects every month, choose a monthly estimating package. Because it is most 
-                                cost-effective for you. Many estimating companies offer plans starting from about $1,500 per month. 
-                                These include a dedicated estimator and a set number of estimates. This approach not only saves time 
+                                If you manage multiple projects every month, choose a monthly estimating package. Because it is most
+                                cost-effective for you. Many estimating companies offer plans starting from about $1,500 per month.
+                                These include a dedicated estimator and a set number of estimates. This approach not only saves time
                                 but also brings consistency.
                             </p>
                             <p className="font-medium text-primary">
@@ -68,20 +69,20 @@ export default function Pricing() {
             <section className="py-20 bg-gradient-to-br from-secondary/30 to-white">
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                        
+
                         {/* Single Trade Package */}
                         <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200">
                             <div className="text-center mb-8">
                                 <h3 className="text-2xl font-bold mb-2">Single Trade Package</h3>
                                 <div className="text-primary font-medium mb-4">Single Trade</div>
                                 <p className="text-gray-600 mb-6">
-                                    Ideal for subcontractors focusing on a single trade (e.g., electrical, plumbing, HVAC). 
+                                    Ideal for subcontractors focusing on a single trade (e.g., electrical, plumbing, HVAC).
                                     Includes detailed Quantity takeoffs and trade-specific cost analysis.
                                 </p>
                                 <div className="text-4xl font-bold text-primary mb-2">$150 - $250</div>
                                 <div className="text-gray-500">per project</div>
                             </div>
-                            
+
                             <div className="mb-8">
                                 <h4 className="font-bold mb-4">Package Details</h4>
                                 <ul className="space-y-3">
@@ -99,7 +100,7 @@ export default function Pricing() {
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
@@ -109,13 +110,13 @@ export default function Pricing() {
                                 <h3 className="text-2xl font-bold mb-2">Standard Package</h3>
                                 <div className="text-primary font-medium mb-4">Multiple Trade / GC</div>
                                 <p className="text-gray-600 mb-6">
-                                    Best for general contractors handling small to mid size projects. 
+                                    Best for general contractors handling small to mid size projects.
                                     Includes complete trade breakdown, CSI-Coded summary and pricing sheets.
                                 </p>
                                 <div className="text-4xl font-bold text-primary mb-2">$400 - $600</div>
                                 <div className="text-gray-500">per project</div>
                             </div>
-                            
+
                             <div className="mb-8">
                                 <h4 className="font-bold mb-4">Package Details</h4>
                                 <ul className="space-y-3">
@@ -133,7 +134,7 @@ export default function Pricing() {
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
@@ -142,18 +143,18 @@ export default function Pricing() {
                             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                                 <span className="bg-secondary text-dark px-6 py-2 rounded-full text-sm font-bold">Most Popular</span>
                             </div>
-                            
+
                             <div className="text-center mb-8">
                                 <h3 className="text-2xl font-bold mb-2">Premium Packages</h3>
                                 <div className="text-blue-100 font-medium mb-4">Full Project Estimation</div>
                                 <p className="text-blue-100 mb-6">
-                                    Designed for large GC or developers needing Comprehensive and prioritized estimates. 
+                                    Designed for large GC or developers needing Comprehensive and prioritized estimates.
                                     Includes Value engineering, detailed reports, and clarifications.
                                 </p>
                                 <div className="text-4xl font-bold mb-2">$1,000 - $1,500</div>
                                 <div className="text-blue-200">per project</div>
                             </div>
-                            
+
                             <div className="mb-8">
                                 <h4 className="font-bold mb-4">Package Details</h4>
                                 <ul className="space-y-3">
@@ -171,7 +172,7 @@ export default function Pricing() {
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <Link to="/quote" className="btn bg-white text-primary hover:bg-gray-100 w-full font-bold">Get Started</Link>
                         </div>
 
@@ -181,13 +182,13 @@ export default function Pricing() {
                                 <h3 className="text-2xl font-bold mb-2">Residential Monthly Package</h3>
                                 <div className="text-primary font-medium mb-4">Residential Project</div>
                                 <p className="text-gray-600 mb-6">
-                                    For builders or contractors managing residential projects per month. 
+                                    For builders or contractors managing residential projects per month.
                                     Includes recurring report, project tracking, and fast delivery.
                                 </p>
                                 <div className="text-4xl font-bold text-primary mb-2">$2,500 - $3,500</div>
                                 <div className="text-gray-500">per month</div>
                             </div>
-                            
+
                             <div className="mb-8">
                                 <h4 className="font-bold mb-4">Package Details</h4>
                                 <ul className="space-y-3">
@@ -213,7 +214,7 @@ export default function Pricing() {
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
@@ -223,13 +224,13 @@ export default function Pricing() {
                                 <h3 className="text-2xl font-bold mb-2">Commercial Monthly Package</h3>
                                 <div className="text-primary font-medium mb-4">Commercial Project</div>
                                 <p className="text-gray-600 mb-6">
-                                    For commercial GCs and developers needing consistent monthly estimating support. 
+                                    For commercial GCs and developers needing consistent monthly estimating support.
                                     Includes material takeoffs and dedicated estimator access.
                                 </p>
                                 <div className="text-4xl font-bold text-primary mb-2">$3,500 - $4,500</div>
                                 <div className="text-gray-500">per month</div>
                             </div>
-                            
+
                             <div className="mb-8">
                                 <h4 className="font-bold mb-4">Package Details</h4>
                                 <ul className="space-y-3">
@@ -255,7 +256,7 @@ export default function Pricing() {
                                     </li>
                                 </ul>
                             </div>
-                            
+
                             <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
                         </div>
                     </div>
@@ -268,7 +269,7 @@ export default function Pricing() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Factors that Affect the Estimation Prices</h2>
                         <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-                            When it comes to construction estimating services, the final price can vary widely. 
+                            When it comes to construction estimating services, the final price can vary widely.
                             Several key factors influence what you will pay. However, understanding them can help you choose the right service for your project.
                         </p>
                     </div>
@@ -281,7 +282,7 @@ export default function Pricing() {
                                 desc: "The size and difficulty of your project play a major role when the project is started. Larger builds or jobs with complex designs have higher prices, while smaller or simpler projects are more affordable."
                             },
                             {
-                                number: "2", 
+                                number: "2",
                                 title: "Required Turnaround Time",
                                 desc: "In addition, the speed at which you need your estimate can impact the price. If you request a fast turnaround, such as a 9–24-hour delivery, some companies may charge an extra fee for the rushed service."
                             },
@@ -336,7 +337,7 @@ export default function Pricing() {
                                 ))}
                             </div>
                         </div>
-                        
+
                         <div className="bg-white p-8 rounded-2xl shadow-lg">
                             <h3 className="text-2xl font-bold mb-6 text-center">Why We Are the Best Choice</h3>
                             <p className="text-gray-600 mb-6 text-center">

@@ -4,15 +4,16 @@ import {
     FileText, Calculator, Building, PenTool, Layout, Ruler, Hammer,
     Zap, Droplet, Wind, Box, Layers, Factory as FactoryIcon, Home as HomeIcon
 } from 'lucide-react';
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { motion } from 'framer-motion';
 
 export default function Home() {
     return (
         <>
-            <SEO
-                title="Construction Estimating Services Florida | Accurate and Fast"
-                description="Get professional construction estimating services Florida, with accurate takeoffs and pricing. At Florida Estimators, we help you plan better and stay within budget."
+            <PageSEO
+                slug="home"
+                fallbackTitle="Construction Estimating Services Florida | Accurate and Fast"
+                fallbackDescription="Get professional construction estimating services Florida, with accurate takeoffs and pricing. At Florida Estimators, we help you plan better and stay within budget."
             />
 
             {/* Hero Section - Static Image */}

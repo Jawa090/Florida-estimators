@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
+import RedirectHandler from './components/RedirectHandler';
 
 // Pages
 import Home from './pages/Home';
@@ -33,6 +34,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Layout>
+      <RedirectHandler />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

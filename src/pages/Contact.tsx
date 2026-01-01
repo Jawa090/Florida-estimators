@@ -1,11 +1,15 @@
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { Mail, Phone, MapPin, Clock, FileText, Building, CheckCircle, Users, Target, Upload, Calendar } from 'lucide-react';
 
 export default function Contact() {
     return (
         <>
-            <SEO title="Contact Estimating Florida" description="Quick and correct cost estimates for your next building project in Florida. Skilled building estimating services for contractors, subcontractors, builders, and developers." />
-            
+            <PageSEO
+                slug="contact"
+                fallbackTitle="Contact Estimating Florida"
+                fallbackDescription="Quick and correct cost estimates for your next building project in Florida. Skilled building estimating services for contractors, subcontractors, builders, and developers."
+            />
+
             {/* Hero Section */}
             <section className="relative py-32 bg-gradient-to-br from-primary to-primary/80 text-white overflow-hidden">
                 <div className="absolute inset-0 bg-black/20"></div>
@@ -15,8 +19,8 @@ export default function Contact() {
                             Contact Estimating Florida
                         </h1>
                         <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-                            Do you need quick and correct cost estimates for your next building project? In Florida, contractors, 
-                            subcontractors, builders, and developers can get skilled building estimating services from Estimating Florida. 
+                            Do you need quick and correct cost estimates for your next building project? In Florida, contractors,
+                            subcontractors, builders, and developers can get skilled building estimating services from Estimating Florida.
                             Let us know your due date and plans, and we will get back to you right away with the next steps.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -39,7 +43,7 @@ export default function Contact() {
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Us</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                            Do you want to know more about how we estimate, how long it takes, or our prices? 
+                            Do you want to know more about how we estimate, how long it takes, or our prices?
                             Get in touch with us in any way listed below, and we'll respond as quickly as we can.
                         </p>
                     </div>
@@ -212,7 +216,7 @@ export default function Contact() {
                                 icon: FileText
                             },
                             {
-                                step: "2", 
+                                step: "2",
                                 title: "Set Parameters",
                                 desc: "We set the date, format, and trades.",
                                 icon: Calendar
@@ -301,7 +305,7 @@ export default function Contact() {
                 <div className="container mx-auto px-4">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
                     <p className="text-xl mb-10 max-w-2xl mx-auto text-blue-100">
-                        Contact us today for quick and accurate construction estimates. 
+                        Contact us today for quick and accurate construction estimates.
                         We're here to help you win more bids and grow your business.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">

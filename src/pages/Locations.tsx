@@ -1,5 +1,5 @@
 import Hero from '../components/ui/Hero';
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { locations } from '../data/locations';
 import { MapPin, Building, Users, TrendingUp, Clock, Award, Phone, Mail, CheckCircle, Calculator, Truck } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 export default function Locations() {
     return (
         <>
-            <SEO title="Service Areas" description="We provide estimating services across all of Florida, including Miami, Tampa, Orlando, Jacksonville and more." />
+            <PageSEO
+                slug="locations"
+                fallbackTitle="Service Areas"
+                fallbackDescription="We provide estimating services across all of Florida, including Miami, Tampa, Orlando, Jacksonville and more."
+            />
             <Hero title="Service Areas in Florida" subtitle="Local expertise for every major city and county across the state." />
 
             {/* Statewide Coverage Overview */}
@@ -17,7 +21,7 @@ export default function Locations() {
                         <span className="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">Comprehensive Coverage</span>
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Serving Every Corner of Florida</h2>
                         <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-                            From the Panhandle to the Keys, we provide expert construction estimating services throughout the Sunshine State. 
+                            From the Panhandle to the Keys, we provide expert construction estimating services throughout the Sunshine State.
                             Our local knowledge and statewide presence ensure accurate, market-specific estimates for your projects.
                         </p>
                     </div>
@@ -60,12 +64,12 @@ export default function Locations() {
                                 ))}
                             </div>
                         </div>
-                        
+
                         <div className="relative">
                             <div className="w-full h-[500px] bg-gradient-to-br from-primary/10 to-secondary/20 rounded-2xl flex items-center justify-center relative overflow-hidden">
-                                <img 
-                                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop" 
-                                    alt="Florida Construction Map" 
+                                <img
+                                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop"
+                                    alt="Florida Construction Map"
                                     className="w-full h-full object-cover rounded-2xl"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent rounded-2xl flex items-end p-8">
@@ -122,7 +126,7 @@ export default function Locations() {
                             },
                             {
                                 city: "Tampa Bay",
-                                region: "West Central Florida", 
+                                region: "West Central Florida",
                                 projects: "800+ Projects",
                                 specialties: ["Multi-Family", "Commercial Renovation", "Industrial"],
                                 image: "https://images.unsplash.com/photo-1595433707802-6b2626ef1c91?q=80&w=2070&auto=format&fit=crop",
@@ -131,7 +135,7 @@ export default function Locations() {
                             {
                                 city: "Orlando",
                                 region: "Central Florida",
-                                projects: "650+ Projects", 
+                                projects: "650+ Projects",
                                 specialties: ["Hospitality", "Theme Parks", "Vacation Rentals"],
                                 image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=2070&auto=format&fit=crop",
                                 marketInfo: "Tourism and entertainment construction leader"
@@ -163,9 +167,9 @@ export default function Locations() {
                         ].map((market, idx) => (
                             <div key={idx} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
                                 <div className="h-48 overflow-hidden">
-                                    <img 
-                                        src={market.image} 
-                                        alt={market.city} 
+                                    <img
+                                        src={market.image}
+                                        alt={market.city}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>
@@ -176,7 +180,7 @@ export default function Locations() {
                                     </div>
                                     <div className="text-gray-600 text-sm mb-4">{market.region}</div>
                                     <p className="text-gray-600 text-sm mb-4 italic">{market.marketInfo}</p>
-                                    
+
                                     <div className="space-y-2">
                                         <h4 className="font-medium text-dark">Specialties:</h4>
                                         {market.specialties.map((specialty, i) => (
@@ -186,9 +190,9 @@ export default function Locations() {
                                             </div>
                                         ))}
                                     </div>
-                                    
-                                    <Link 
-                                        to={`/location/${market.city.toLowerCase().replace(/[^a-z0-9]/g, '-')}`} 
+
+                                    <Link
+                                        to={`/location/${market.city.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
                                         className="mt-4 inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
                                     >
                                         Learn More <MapPin size={16} className="ml-1" />
@@ -268,9 +272,9 @@ export default function Locations() {
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                         {locations.map((loc) => (
-                            <Link 
-                                key={loc.id} 
-                                to={loc.path} 
+                            <Link
+                                key={loc.id}
+                                to={loc.path}
                                 className="bg-white p-6 rounded-xl border border-gray-200 hover:border-primary hover:shadow-lg transition-all duration-300 group text-center"
                             >
                                 <MapPin className="text-primary mx-auto mb-3 group-hover:scale-110 transition-transform" size={24} />
@@ -283,7 +287,7 @@ export default function Locations() {
                         <div className="bg-white p-8 rounded-2xl shadow-sm max-w-4xl mx-auto">
                             <h3 className="text-2xl font-bold mb-4">Don't See Your Location?</h3>
                             <p className="text-gray-600 mb-6">
-                                We serve contractors throughout Florida, including smaller cities and rural areas. 
+                                We serve contractors throughout Florida, including smaller cities and rural areas.
                                 Contact us to discuss your specific location and project needs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -320,7 +324,7 @@ export default function Locations() {
                                 count: "150+"
                             },
                             {
-                                title: "Subcontractor Networks", 
+                                title: "Subcontractor Networks",
                                 desc: "Active connections with trade contractors providing real-time labor rate and availability data.",
                                 count: "500+"
                             },

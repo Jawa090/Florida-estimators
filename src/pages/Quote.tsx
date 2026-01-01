@@ -1,11 +1,15 @@
 import Hero from '../components/ui/Hero';
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { UploadCloud, FileText, CheckCircle } from 'lucide-react';
 
 export default function Quote() {
     return (
         <>
-            <SEO title="Get a Quote" description="Request a fast and accurate construction estimate. Upload your plans and get a quote within hours." />
+            <PageSEO
+                slug="quote"
+                fallbackTitle="Get a Quote"
+                fallbackDescription="Request a fast and accurate construction estimate. Upload your plans and get a quote within hours."
+            />
             <Hero title="Get A Free Quote" subtitle="Upload your plans and let us handle the numbers. Fast turnaround guaranteed." />
 
             <section className="py-20">

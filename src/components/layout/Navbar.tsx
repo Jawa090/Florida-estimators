@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, FileText } from 'lucide-react';
-import { services } from '../../data/services';
-import { trades } from '../../data/services';
 import clsx from 'clsx';
 
 export default function Navbar() {

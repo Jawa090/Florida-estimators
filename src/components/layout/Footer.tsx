@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { services } from '../../data/services';
-import { locations } from '../../data/locations';
+
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Clock, Award, CheckCircle } from 'lucide-react';
 
 export default function Footer() {
@@ -77,7 +76,7 @@ export default function Footer() {
                                 <span>Mon–Sat 9:00 AM–6:00 PM EST</span>
                             </li>
                         </ul>
-                        
+
                         <div className="mt-6">
                             <h5 className="font-semibold mb-3 text-primary">Get Free Quote</h5>
                             <Link to="/quote" className="btn btn-primary w-full text-center">
@@ -92,7 +91,7 @@ export default function Footer() {
                     <h4 className="text-lg font-bold mb-4 text-center">Service Areas Across Florida</h4>
                     <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
                         {[
-                            "Miami", "Orlando", "Tampa", "Jacksonville", "Fort Lauderdale", 
+                            "Miami", "Orlando", "Tampa", "Jacksonville", "Fort Lauderdale",
                             "St. Petersburg", "Hialeah", "Tallahassee", "Cape Coral", "Port St. Lucie"
                         ].map((city, idx) => (
                             <span key={idx} className="hover:text-primary cursor-pointer">{city}</span>
@@ -107,23 +106,23 @@ export default function Footer() {
                         <div className="text-gray-500 text-center md:text-left">
                             <p>&copy; {new Date().getFullYear()} Estimating Florida. All rights reserved.</p>
                         </div>
-                        
+
                         <div className="text-center">
                             <div className="flex items-center justify-center gap-2 text-primary">
                                 <Award size={16} />
                                 <span className="font-semibold">Licensed & Insured in Florida</span>
                             </div>
                         </div>
-                        
+
                         <div className="flex justify-center md:justify-end space-x-6 text-gray-500">
                             <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
                             <Link to="/terms" className="hover:text-white">Terms of Service</Link>
                         </div>
                     </div>
-                    
+
                     <div className="mt-6 pt-6 border-t border-gray-800 text-center text-xs text-gray-500">
                         <p>
-                            Professional construction estimating services for contractors, builders, and developers throughout Florida. 
+                            Professional construction estimating services for contractors, builders, and developers throughout Florida.
                             Specializing in residential, commercial, and industrial projects with fast turnaround times and accurate takeoffs.
                         </p>
                     </div>

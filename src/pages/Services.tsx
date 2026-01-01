@@ -1,5 +1,5 @@
 import Hero from '../components/ui/Hero';
-import SEO from '../components/SEO';
+import PageSEO from '../components/PageSEO';
 import { services, trades } from '../data/services';
 import { ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 export default function Services() {
     return (
         <>
-            <SEO title="Our Services" description="Comprehensive construction estimating services including residential, commercial, industrial, and all specific trades." />
+            <PageSEO
+                slug="services"
+                fallbackTitle="Our Services"
+                fallbackDescription="Comprehensive construction estimating services including residential, commercial, industrial, and all specific trades."
+            />
             <Hero title="Our Estimating Services" subtitle="Specialized takeoff and consulting services tailored to your trade and project type." />
 
             <section className="py-20">
