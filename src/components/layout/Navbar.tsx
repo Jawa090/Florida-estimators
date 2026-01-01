@@ -26,13 +26,13 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <nav className="hidden lg:flex items-center space-x-6">
                     <Link to="/" className="text-dark hover:text-primary font-medium">Home</Link>
-                    <Link to="/about" className="text-dark hover:text-primary font-medium">About Us</Link>
-                    <Link to="/pricing" className="text-dark hover:text-primary font-medium">Pricing</Link>
-                    <Link to="/contact" className="text-dark hover:text-primary font-medium">Contact Us</Link>
+                    <Link to="/about/" className="text-dark hover:text-primary font-medium">About Us</Link>
+                    <Link to="/pricing/" className="text-dark hover:text-primary font-medium">Pricing</Link>
+                    <Link to="/contact/" className="text-dark hover:text-primary font-medium">Contact Us</Link>
                 </nav>
 
                 <div className="hidden lg:flex items-center space-x-4">
-                    <Link to="/quote" className="btn btn-primary text-sm flex items-center gap-2">
+                    <Link to="/quote/" className="btn btn-primary text-sm flex items-center gap-2">
                         <FileText size={18} /> Get a Quote
                     </Link>
                     <a href="tel:+13215550123" className="text-dark hover:text-primary font-bold flex items-center gap-2">
@@ -50,15 +50,15 @@ export default function Navbar() {
             {isOpen && (
                 <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg p-4 flex flex-col space-y-4">
                     <Link to="/" className="text-dark hover:text-primary font-medium">Home</Link>
-                    <Link to="/about" className="text-dark hover:text-primary font-medium">About</Link>
-                    <Link to="/services" className="text-dark hover:text-primary font-medium">Services</Link>
-                    <Link to="/trades" className="text-dark hover:text-primary font-medium">Trades</Link>
-                    <Link to="/locations" className="text-dark hover:text-primary font-medium">Locations</Link>
-                    <Link to="/pricing" className="text-dark hover:text-primary font-medium">Pricing</Link>
-                    <Link to="/sample" className="text-dark hover:text-primary font-medium">Samples</Link>
-                    <Link to="/blog" className="text-dark hover:text-primary font-medium">Blog</Link>
-                    <Link to="/contact" className="text-dark hover:text-primary font-medium">Contact</Link>
-                    <Link to="/quote" className="btn btn-primary w-full text-center">Get a Quote</Link>
+                    <Link to="/about/" className="text-dark hover:text-primary font-medium">About</Link>
+                    <Link to="/services/" className="text-dark hover:text-primary font-medium">Services</Link>
+                    <Link to="/trades/" className="text-dark hover:text-primary font-medium">Trades</Link>
+                    <Link to="/locations/" className="text-dark hover:text-primary font-medium">Locations</Link>
+                    <Link to="/pricing/" className="text-dark hover:text-primary font-medium">Pricing</Link>
+                    <Link to="/sample/" className="text-dark hover:text-primary font-medium">Samples</Link>
+                    <Link to="/blog/" className="text-dark hover:text-primary font-medium">Blog</Link>
+                    <Link to="/contact/" className="text-dark hover:text-primary font-medium">Contact</Link>
+                    <Link to="/quote/" className="btn btn-primary w-full text-center">Get a Quote</Link>
                 </div>
             )}
         </header>

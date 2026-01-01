@@ -24,6 +24,13 @@ const RedirectHandler = () => {
             window.location.href = `https://${newHostname}${location.pathname}${location.search}`;
             return;
         }
+
+        // 3. Ensure trailing slash (except for files and homepage)
+        const path = location.pathname;
+        if (path !== '/' && !path.endsWith('/') && !path.includes('.')) {
+            window.location.href = `${protocol}//${hostname}${path}/${location.search}`;
+            return;
+        }
     }, [location]);
 
     return null;

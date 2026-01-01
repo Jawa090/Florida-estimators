@@ -192,7 +192,7 @@ export default function Locations() {
                                     </div>
 
                                     <Link
-                                        to={`/location/${market.city.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
+                                        to={`/location/${market.city.toLowerCase().replace(/[^a-z0-9]/g, '-')}/`}
                                         className="mt-4 inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
                                     >
                                         Learn More <MapPin size={16} className="ml-1" />
@@ -291,11 +291,11 @@ export default function Locations() {
                                 Contact us to discuss your specific location and project needs.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/contact" className="btn btn-primary">
+                                <Link to="/contact/" className="btn btn-primary">
                                     <Phone size={18} className="mr-2" />
                                     Call Us Today
                                 </Link>
-                                <Link to="/quote" className="btn btn-outline">
+                                <Link to="/quote/" className="btn btn-outline">
                                     <Mail size={18} className="mr-2" />
                                     Get a Quote
                                 </Link>

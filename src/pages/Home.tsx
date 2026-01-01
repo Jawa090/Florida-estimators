@@ -41,10 +41,10 @@ export default function Home() {
                                 The fast-growing construction market of Florida demands accurate estimations. Errors in these numbers can lead to budget confusion and overruns. At Florida estimators, we give you the solution with reliable cost projections. With 15 years of experience, our estimates will help you gain clarity and plan budgets better. It allows you to avoid surprises and setbacks. Work with us to grow your construction business.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Link to="/quote" className="btn btn-primary text-lg px-8 py-4 shadow-xl hover:scale-105 transition-transform">
+                                <Link to="/quote/" className="btn btn-primary text-lg px-8 py-4 shadow-xl hover:scale-105 transition-transform">
                                     Get a Quote
                                 </Link>
-                                <Link to="/contact" className="btn bg-white text-dark hover:bg-gray-100 text-lg px-8 py-4 shadow-xl hover:scale-105 transition-transform">
+                                <Link to="/contact/" className="btn bg-white text-dark hover:bg-gray-100 text-lg px-8 py-4 shadow-xl hover:scale-105 transition-transform">
                                     Upload Plans
                                 </Link>
                             </div>
@@ -269,7 +269,7 @@ export default function Home() {
                         ))}
                     </div>
                     <div className="text-center mt-12">
-                        <Link to="/contact" className="btn btn-primary btn-lg">Upload Plans Now</Link>
+                        <Link to="/contact/" className="btn btn-primary btn-lg">Upload Plans Now</Link>
                     </div>
                 </div>
             </section>
@@ -282,7 +282,7 @@ export default function Home() {
                             <h2 className="text-3xl md:text-5xl font-bold mb-4">Our Portfolio</h2>
                             <p className="text-gray-600 text-lg">Our past projects will show you the range and quality of our work. Each of these shows our attention to detail and accuracy. We support small builds to large buildings with equal attention. Explore our work to see our success in the business.</p>
                         </div>
-                        <Link to="/sample" className="btn btn-outline mt-6 md:mt-0">View All Projects</Link>
+                        <Link to="/sample/" className="btn btn-outline mt-6 md:mt-0">View All Projects</Link>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-6">
@@ -294,7 +294,7 @@ export default function Home() {
                             <div key={i} className="group overflow-hidden rounded-xl h-64 relative">
                                 <img src={img} alt="Portfolio" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                                 <div className="absolute inset-0 bg-dark/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                                    <Link to="/sample" className="btn btn-sm btn-primary">View Details</Link>
+                                    <Link to="/sample/" className="btn btn-sm btn-primary">View Details</Link>
                                 </div>
                             </div>
                         ))}
@@ -444,10 +444,10 @@ export default function Home() {
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Win More Bids?</h2>
                     <p className="text-xl mb-10 max-w-2xl mx-auto text-blue-100 lg:text-2xl">Share your plans with us and get a quote from our expert estimators. Replace all the guesses with precise estimates you can work with. We give you the best construction estimating services Florida at our firm.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/quote" className="btn bg-white text-primary hover:bg-gray-100 text-lg px-12 py-5 font-bold shadow-2xl hover:-translate-y-1 transition-transform">
+                        <Link to="/quote/" className="btn bg-white text-primary hover:bg-gray-100 text-lg px-12 py-5 font-bold shadow-2xl hover:-translate-y-1 transition-transform">
                             Get Your Estimate
                         </Link>
-                        <Link to="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-12 py-5 font-bold shadow-2xl hover:-translate-y-1 transition-all">
+                        <Link to="/contact/" className="btn border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-12 py-5 font-bold shadow-2xl hover:-translate-y-1 transition-all">
                             Upload Plans
                         </Link>
                     </div>

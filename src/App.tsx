@@ -38,23 +38,23 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about/" element={<About />} />
 
         {/* Services & Trades */}
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/:id" element={<ServiceTemplate />} />
-        <Route path="/trades/:id" element={<TradeTemplate />} />
+        <Route path="/services/" element={<Services />} />
 
         {/* Locations */}
-        <Route path="/locations" element={<Locations />} />
-        <Route path="/location/:id" element={<LocationTemplate />} />
+        <Route path="/locations/" element={<Locations />} />
+        <Route path="/location/:id/" element={<LocationTemplate />} />
 
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/quote" element={<Quote />} />
-        <Route path="/sample" element={<Sample />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/blog/:id" element={<BlogTemplate />} />
+        <Route path="/contact/" element={<Contact />} />
+        <Route path="/quote/" element={<Quote />} />
+        <Route path="/sample/" element={<Sample />} />
+        <Route path="/blog/" element={<Blog />} />
+        <Route path="/pricing/" element={<Pricing />} />
+        <Route path="/blog/:id/" element={<BlogTemplate />} />
+        <Route path="/services/:id/" element={<ServiceTemplate />} />
+        <Route path="/trades/:id/" element={<TradeTemplate />} />
       </Routes>
     </Layout>
   )
