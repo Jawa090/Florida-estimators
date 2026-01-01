@@ -10,6 +10,7 @@ import Contact from './pages/Contact';
 import Quote from './pages/Quote';
 import Sample from './pages/Sample';
 import Blog from './pages/Blog';
+import Pricing from './pages/Pricing';
 
 // Templates
 import ServiceTemplate from './templates/ServiceTemplate';
@@ -50,6 +51,7 @@ function App() {
         <Route path="/quote" element={<Quote />} />
         <Route path="/sample" element={<Sample />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog/:id" element={<BlogTemplate />} />
       </Routes>
     </Layout>

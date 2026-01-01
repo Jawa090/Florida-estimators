@@ -28,27 +28,9 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <nav className="hidden lg:flex items-center space-x-6">
                     <Link to="/" className="text-dark hover:text-primary font-medium">Home</Link>
-                    <Link to="/about" className="text-dark hover:text-primary font-medium">About</Link>
-                    <div className="relative group">
-                        <Link to="/services" className="text-dark hover:text-primary font-medium flex items-center">Services</Link>
-                        <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-md p-4 hidden group-hover:block border-t-4 border-primary">
-                            {services.map(s => (
-                                <Link key={s.id} to={s.path} className="block py-2 text-sm text-gray-600 hover:text-primary border-b border-gray-100 last:border-0">{s.title}</Link>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="relative group">
-                        <span className="text-dark hover:text-primary font-medium cursor-pointer">Trades</span>
-                        <div className="absolute top-full left-0 w-64 bg-white shadow-xl rounded-md p-4 hidden group-hover:block border-t-4 border-primary">
-                            {trades.map(t => (
-                                <Link key={t.id} to={t.path} className="block py-2 text-sm text-gray-600 hover:text-primary border-b border-gray-100 last:border-0">{t.title}</Link>
-                            ))}
-                        </div>
-                    </div>
-                    <Link to="/locations" className="text-dark hover:text-primary font-medium">Locations</Link>
-                    <Link to="/sample" className="text-dark hover:text-primary font-medium">Samples</Link>
-                    <Link to="/blog" className="text-dark hover:text-primary font-medium">Blog</Link>
-                    <Link to="/contact" className="text-dark hover:text-primary font-medium">Contact</Link>
+                    <Link to="/about" className="text-dark hover:text-primary font-medium">About Us</Link>
+                    <Link to="/pricing" className="text-dark hover:text-primary font-medium">Pricing</Link>
+                    <Link to="/contact" className="text-dark hover:text-primary font-medium">Contact Us</Link>
                 </nav>
 
                 <div className="hidden lg:flex items-center space-x-4">
@@ -74,6 +56,7 @@ export default function Navbar() {
                     <Link to="/services" className="text-dark hover:text-primary font-medium">Services</Link>
                     <Link to="/trades" className="text-dark hover:text-primary font-medium">Trades</Link>
                     <Link to="/locations" className="text-dark hover:text-primary font-medium">Locations</Link>
+                    <Link to="/pricing" className="text-dark hover:text-primary font-medium">Pricing</Link>
                     <Link to="/sample" className="text-dark hover:text-primary font-medium">Samples</Link>
                     <Link to="/blog" className="text-dark hover:text-primary font-medium">Blog</Link>
                     <Link to="/contact" className="text-dark hover:text-primary font-medium">Contact</Link>
