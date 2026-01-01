@@ -8,6 +8,8 @@ interface SEOData {
     ogTitle: string;
     ogDescription: string;
     ogImage: string;
+    keywords?: string;
+    robots?: string;
 }
 
 export const usePageSEO = (slug: string, type: 'page' | 'post' = 'page') => {
@@ -39,13 +41,23 @@ export const usePageSEO = (slug: string, type: 'page' | 'post' = 'page') => {
                         return canonical.replace('cms.estimatingflorida.com', 'estimatingflorida.com');
                     };
 
+                    // Format robots string
+                    const getRobotsString = () => {
+                        if (yoast.robots && typeof yoast.robots === 'object') {
+                            return Object.values(yoast.robots).filter(Boolean).join(', ');
+                        }
+                        return '';
+                    };
+
                     setSeoData({
                         title: yoast.title || data.title.rendered,
                         metaDesc: yoast.description || '',
                         canonical: getCanonical(),
                         ogTitle: yoast.og_title || yoast.title || '',
                         ogDescription: yoast.og_description || yoast.description || '',
-                        ogImage: yoast.og_image?.[0]?.url || ''
+                        ogImage: yoast.og_image?.[0]?.url || '',
+                        keywords: yoast.focuskw || '',
+                        robots: getRobotsString()
                     });
                 }
             } catch (error) {
