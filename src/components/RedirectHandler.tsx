@@ -12,17 +12,33 @@ const RedirectHandler = () => {
         // Skip all redirects on localhost
         if (isLocalhost) return;
 
-        // 1. HTTP to HTTPS redirect
-        if (protocol === 'http:') {
-            window.location.href = `https://${hostname}${location.pathname}${location.search}`;
-            return;
+        let shouldRedirect = false;
+        let newHostname = hostname;
+        let newProtocol = protocol;
+
+        // 1. WWW to Non-WWW redirect
+        if (hostname.startsWith('www.')) {
+            newHostname = hostname.replace('www.', '');
+            shouldRedirect = true;
         }
 
-        // 2. WWW to Non-WWW redirect
-        if (hostname.startsWith('www.')) {
-            const newHostname = hostname.replace('www.', '');
-            window.location.href = `https://${newHostname}${location.pathname}${location.search}`;
-            return;
+        // 2. HTTP to HTTPS redirect
+        if (protocol === 'http:') {
+            newProtocol = 'https:';
+            shouldRedirect = true;
+        }
+
+        const path = location.pathname;
+        let newPath = path;
+
+        // 3. Ensure trailing slash (except for files and homepage)
+        if (path !== '/' && !path.endsWith('/') && !path.includes('.')) {
+            newPath = path + '/';
+            shouldRedirect = true;
+        }
+
+        if (shouldRedirect) {
+            window.location.replace(`${newProtocol}//${newHostname}${newPath}${location.search}`);
         }
     }, [location]);
 

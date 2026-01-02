@@ -31,8 +31,8 @@ export default function About() {
                             </p>
 
                             <div className="flex gap-4 mt-8">
-                                <Link to="/contact" className="btn btn-primary">Contact Us</Link>
-                                <Link to="/sample" className="btn btn-outline">View Samples</Link>
+                                <Link to="/contact/" className="btn btn-primary">Contact Us</Link>
+                                <Link to="/sample/" className="btn btn-outline">View Samples</Link>
                             </div>
                         </div>
                         <div className="relative h-96 rounded-xl overflow-hidden shadow-xl">
@@ -171,7 +171,7 @@ export default function About() {
                     <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed mb-8">
                         Estimating Florida proudly serves clients across the state, including Miami, Orlando, Tampa, Jacksonville, Fort Lauderdale, and surrounding areas. No matter where your project is located in Florida, we provide estimating support to help you stay on track and competitive.
                     </p>
-                    <Link to="/contact" className="btn btn-primary btn-lg">Get Started Today</Link>
+                    <Link to="/contact/" className="btn btn-primary btn-lg">Get Started Today</Link>
                 </div>
             </section>
         </>

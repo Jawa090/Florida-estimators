@@ -30,7 +30,7 @@ export default function Pricing() {
                                 <Phone className="w-5 h-5 mr-2" />
                                 Call Us: (718) 719-6171
                             </a>
-                            <Link to="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 font-bold">
+                            <Link to="/contact/" className="btn border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-4 font-bold">
                                 <Calendar className="w-5 h-5 mr-2" />
                                 Schedule a Meeting
                             </Link>
@@ -101,7 +101,7 @@ export default function Pricing() {
                                 </ul>
                             </div>
 
-                            <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
+                            <Link to="/quote/" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
                         {/* Standard Package */}
@@ -135,7 +135,7 @@ export default function Pricing() {
                                 </ul>
                             </div>
 
-                            <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
+                            <Link to="/quote/" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
                         {/* Premium Package - Most Popular */}
@@ -173,7 +173,7 @@ export default function Pricing() {
                                 </ul>
                             </div>
 
-                            <Link to="/quote" className="btn bg-white text-primary hover:bg-gray-100 w-full font-bold">Get Started</Link>
+                            <Link to="/quote/" className="btn bg-white text-primary hover:bg-gray-100 w-full font-bold">Get Started</Link>
                         </div>
 
                         {/* Residential Monthly Package */}
@@ -215,7 +215,7 @@ export default function Pricing() {
                                 </ul>
                             </div>
 
-                            <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
+                            <Link to="/quote/" className="btn btn-outline w-full">Get Started</Link>
                         </div>
 
                         {/* Commercial Monthly Package */}
@@ -257,7 +257,7 @@ export default function Pricing() {
                                 </ul>
                             </div>
 
-                            <Link to="/quote" className="btn btn-outline w-full">Get Started</Link>
+                            <Link to="/quote/" className="btn btn-outline w-full">Get Started</Link>
                         </div>
                     </div>
                 </div>
@@ -372,17 +372,17 @@ export default function Pricing() {
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-8">Get Your Quote Today</h2>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
-                            <Link to="/quote" className="btn bg-primary text-white hover:bg-primary/90 text-lg px-8 py-4 font-bold flex-1">
+                            <Link to="/quote/" className="btn bg-primary text-white hover:bg-primary/90 text-lg px-8 py-4 font-bold flex-1">
                                 <FileText className="w-5 h-5 mr-2" />
                                 Get a Quick Price Quote
                             </Link>
-                            <Link to="/contact" className="btn border-2 border-white text-white hover:bg-white hover:text-dark text-lg px-8 py-4 font-bold flex-1">
+                            <Link to="/contact/" className="btn border-2 border-white text-white hover:bg-white hover:text-dark text-lg px-8 py-4 font-bold flex-1">
                                 <Phone className="w-5 h-5 mr-2" />
                                 Book a Consultation Call
                             </Link>
                         </div>
                         <div className="mt-8">
-                            <Link to="/quote" className="inline-flex items-center gap-2 bg-secondary text-dark px-6 py-3 rounded-lg font-bold hover:bg-secondary/90 transition-colors">
+                            <Link to="/quote/" className="inline-flex items-center gap-2 bg-secondary text-dark px-6 py-3 rounded-lg font-bold hover:bg-secondary/90 transition-colors">
                                 <Upload className="w-5 h-5" />
                                 Upload Plan & Submit
                             </Link>

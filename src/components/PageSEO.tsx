@@ -27,6 +27,8 @@ export default function PageSEO({ slug, fallbackTitle, fallbackDescription, type
             title={seoData.title}
             description={seoData.metaDesc || fallbackDescription}
             canonical={seoData.canonical}
+            keywords={seoData.keywords}
+            robots={seoData.robots}
         />
     );
 }
