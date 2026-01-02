@@ -30,15 +30,23 @@ export const usePageSEO = (slug: string, type: 'page' | 'post' = 'page') => {
                         const currentHost = window.location.hostname;
                         const isLocalhost = currentHost === 'localhost' || currentHost === '127.0.0.1';
 
-                        // If localhost, stick to localhost
-                        if (isLocalhost) {
-                            return window.location.href;
-                        }
-
                         // If production, ensure it matches the production domain (without CMS prefix)
                         // The CMS might return cms.estimatingflorida.com, we want estimatingflorida.com
                         let canonical = yoast.canonical || window.location.href;
-                        return canonical.replace('cms.estimatingflorida.com', 'estimatingflorida.com');
+                        canonical = canonical.replace('cms.estimatingflorida.com', 'estimatingflorida.com');
+
+                        // Special case for home page (the slug from WP is 'home', but we want it to be '/')
+                        if (slug === 'home' && type === 'page') {
+                            canonical = canonical.replace(/\/home\/?$/, '/');
+                        }
+
+                        // If localhost, stick to localhost instead of production domain
+                        if (isLocalhost) {
+                            const url = new URL(canonical);
+                            return `${window.location.origin}${url.pathname}${url.search}${url.hash}`;
+                        }
+
+                        return canonical;
                     };
 
                     // Format robots string

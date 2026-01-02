@@ -109,7 +109,7 @@ export default function Home() {
                                 </ul>
                             </div>
                             <div className="relative h-64 lg:h-auto">
-                                <img src="https://images.unsplash.com/photo-1507208773393-40275f994abc?q=80&w=2070&auto=format&fit=crop" alt="Trust" className="absolute inset-0 w-full h-full object-cover" />
+                                <img src="/trust.jpg" alt="Trust" className="absolute inset-0 w-full h-full object-cover" />
                                 <div className="absolute inset-0 bg-primary/10"></div>
                             </div>
                         </div>

@@ -30,7 +30,9 @@ async function fetchWPRoutes() {
     const pages = await pagesRes.json();
     const posts = await postsRes.json();
 
-    const pageRoutes = pages.map(page => `/${page.slug}`);
+    const pageRoutes = pages
+      .filter(page => page.slug !== 'home')
+      .map(page => `/${page.slug}`);
     const postRoutes = posts.map(post => `/blog/${post.slug}`);
 
     return [...pageRoutes, ...postRoutes];

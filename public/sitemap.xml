@@ -61,10 +61,4 @@
     <priority>0.8</priority>
   </url>
 
-  <url>
-    <loc>https://estimatingflorida.com/home</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
 </urlset>

@@ -78,7 +78,7 @@ export default function About() {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="order-2 lg:order-1 relative h-80 rounded-xl overflow-hidden shadow-xl bg-gray-200">
                             <img
-                                src="https://images.unsplash.com/photo-1541976544387-e43ca9be23bf?q=80&w=2070&auto=format&fit=crop"
+                                src="/serve.jpg"
                                 alt="Who We Serve"
                                 className="w-full h-full object-cover"
                             />
